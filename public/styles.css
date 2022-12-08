@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+div.head {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(200, 15%, 8%);
+    min-height: 100vh;
+}
+
+nav {
+    /* animation: test ease-in-out alternate 4s; */
+    background-color: hsl(0, 0%, 100%);
+    background-image: radial-gradient(#eee 6%, transparent 0);
+    background-size: 20px 20px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+}
+
+nav h1 {
+    margin-left: 50px;
+    font-weight: 800;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    margin-right: 50px;
+    color: inherit;
+}
+
+nav button:hover {
+    cursor: pointer;
+}
+
+nav button:focus, nav button:active {
+    outline: none;
+}
+
+nav button span {
+    padding-left: 10px;
+    position: relative;
+    top: -7px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.search-form {
+    margin-left: 50px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 7px;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+    color: hsl(0, 0%, 52%);
+}
+
+.search label {
+    margin-right: 10px;
+}
+
+.search label button {
+    color: inherit;
+}
+
+input[type="text"] {
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    min-width: 350px;
+    color: inherit;
+    background-color: inherit;
+    /* transition: width 2s ease-in-out; */
+}
+
+::placeholder {
+    color: inherit;
+}
+
+
+input[type="text"]:active, input[type="text"]:focus {
+    outline: none;
+    /* width: 400px; */
+}
+
+.filter {
+    height: 55px;
+    margin-right: 50px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(200, 15%, 8%);
+}
+
+.options {
+    width: 220px;
+    background-color: inherit;
+    border-radius: 7px;
+    color: inherit;
+    margin-top: 15px;
+    position: relative;
+    z-index: 1;
+    height: 200px;
+}
+
+.options button {
+    all: unset;
+    display: block;
+    position: relative;
+    bottom: -10px;
+    margin: 10px 15px;
+    font-weight: 600;
+    background-color: inherit;
+    color: inherit;
+}
+
+.options button:hover {
+    cursor: pointer;
+}
+
+.select {
+    width: 220px;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    border-radius: 7px;
+    padding: 7px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.select button {
+    color: inherit;
+    background-color: inherit;
+}
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 60px;
+    padding-top: 50px;
+}
+
+.countries {
+    padding: 0 0 50px 50px;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2.5em;             
+    row-gap: 5em; */
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.countries h1 {
+    grid-column: 1/4;
+}
+
+.card {
+    border-radius: 7px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+    width: 280px;
+    height: 360px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.card img {
+    border-radius: 7px 7px 0 0;
+    width: 280px;
+    height: 43%;
+    box-shadow: 0 0 3px 1px hsla(0, 0%, 0%, 0.2);
+}
+
+.card-body {
+    padding: 10px 25px;
+}
+
+.card h2 {
+    color: inherit;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin: 5px auto;
+}
+
+.card span {
+    font-weight: 600;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: hsl(209, 23%, 22%)!important;
+    color: hsl(0, 0%, 100%)!important;
+}
+
+/* DETAILS */
+
+.detail-panel {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(200, 15%, 8%);
+    min-height: 100vh;
+}
+
+.intro {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center ;
+}
+
+.intro img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 50px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.intro button {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    padding: 5px 25px;
+    border-radius: 7px;
+}
+
+.intro button:hover {
+    cursor: pointer;
+}
+
+.intro span {
+    position: relative;
+    top: -6px;
+    margin-left: 6px;
+}
+
+.content {
+    margin: 50px;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 0.75fr 1fr;
+    justify-content: space-around;
+    row-gap: 15px;
+    column-gap: 22px;
+}
+
+.content img {
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.detail-boss h2 {
+    margin-bottom: 20px;
+}
+
+.detail-subtext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start;
+}
+
+.detail-2 {
+    padding-left: 5px;
+}
+
+.detail-subtext p {
+    padding: 7px 0 0;
+}
+
+.detail-panel p span {
+    font-weight: 600;
+}
+
+.detail-subtext pre {
+    display: inline-block;
+    color: rgba(238, 15, 15, 0.2);
+}
+
+.borders {
+    grid-column: 2/3;
+}
+
+
+.borders button {
+    padding: 5px 15px;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    margin: 0 3px 8px 6px;
+    font-weight: 600; 
+}
+
+.borders button:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width: 780px) {
+
+    nav h1 {
+        margin-left: 20px;
+    }
+
+    nav button {
+        margin-right: 20px;
+    }
+
+    .search-form {
+        width: 270px;
+        margin-left: 20px;
+        padding: 10px 2px;
+    }
+
+    .search label {
+        margin-right: 0;
+    }
+
+    input[type="text"] {
+        min-width: 150px;
+        max-width: 160px;
+    }
+
+    .filter {
+        margin-right: 20px;
+    }
+
+    .intro button {
+        margin-left: 30px;
+    }
+
+    .intro img {
+        margin-right: 30px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+        margin: 30px 30px 0; 
+        padding-bottom: 50px;
+    }
+
+    .content img {
+        margin-bottom: 30px;
+    }
+
+    .detail-boss h2 {
+        text-align: center;
+    }
+
+    .countries {
+        padding-left: 20px;
+    }
+
+    .detail-subtext {
+        column-gap: 1em;
+    }
+}
+
+@media (max-width: 530px) {
+    .filter {
+        margin-left: 10px;
+        margin-top: 20px;
+        position: relative;
+        right: -60px;
+        
+    }
+
+    .search-form {
+        position: relative;
+        left: -60px;
+    }
+
+    .controls {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 400px) {
+    .controls {
+        justify-content: left;
+    }
+
+    nav h1 {
+        font-size: 18px;
+    }
+
+    .filter {
+        position: initial;
+        width: 220px;
+        margin-left: 0;
+    }
+
+    .search-form {
+        position: initial;
+        margin-left: 0;
+        width: 330px;
+    }
+
+    .detail-subtext {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .detail-boss h2 {
+        text-align: left;
+    }
+
+    .detail-2 {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+
+    .content {
+        margin: 20px 20px 0;
+    }
+
+    .intro button {
+        margin-left: 20px;
+    }
+    
+    .intro img {
+        margin-right: 20px;
+    }
+
+    .borders span {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .borders button {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+}
+
+@keyframes test {
+    0% {
+        transform: rotate(0deg);
+        color: rebeccapurple;
+    }
+    
+    50% {
+        margin-top: 30px;
+        color: aquamarine;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
