@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/MagicAces/countries-rest-api)
-- Live Site URL: [Firebase](https://countries-rest.web.app/)
+- Live Site URL: [Firebase](https://global-trip.web.app/)
 
 ## My process
 

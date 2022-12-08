@@ -428,6 +428,7 @@ input[type="text"]:active, input[type="text"]:focus {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: flex-start;
+        text-align: left;
     }
 
     .detail-boss h2 {
@@ -441,6 +442,7 @@ input[type="text"]:active, input[type="text"]:focus {
 
     .content {
         margin: 20px 20px 0;
+        justify-content: flex-start;
     }
 
     .intro button {
@@ -461,21 +463,5 @@ input[type="text"]:active, input[type="text"]:focus {
         margin-right: 10px;
     }
 
-}
-
-@keyframes test {
-    0% {
-        transform: rotate(0deg);
-        color: rebeccapurple;
-    }
-    
-    50% {
-        margin-top: 30px;
-        color: aquamarine;
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }
 

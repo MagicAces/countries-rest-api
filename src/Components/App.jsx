@@ -6,7 +6,7 @@ import Detail from "./Detail";
 import axios from "axios";
 
 function App() {
-    const [content, setContent ] = useState(["t"]);
+    const [content, setContent ] = useState(["Test"]);
     const [mode, setMode] = useState(true);
     const [isDetail, setDetail] = useState(false);
     const [details, setDetails] = useState({});
