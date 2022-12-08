@@ -11,10 +11,7 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -31,15 +28,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./lightmodehome.png)
-![](./darkmodehome.png)
-![](./lightmodedetail.png)
-![](./darkmodedetail.png)
+![](./screenshots/lightmodehome.png)
+![](./screenshots/darkmodehome.png)
+![](./screenshots/lightmodedetail.png)
+![](./screenshots/darkmodedetail.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/MagicAces/countries-rest-api)
+- Live Site URL: [Firebase](https://countries-rest.web.app/)
 
 ## My process
 
