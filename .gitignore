@@ -3,6 +3,7 @@
 /.pnp
 .pnp.js
 style-guide.md
+/design
 
 # testing
 /coverage
